@@ -33,7 +33,7 @@ export const signip = async (req: Request, res: Response) => {
     { _id: users._id },
     process.env.TOKEN_SECRET || "tokentest",
     {
-      expiresIn: 60 * 60 * 24,
+      expiresIn: 60 * 60 ,
     }
   );
 

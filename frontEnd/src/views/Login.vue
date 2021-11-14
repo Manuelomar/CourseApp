@@ -9,7 +9,7 @@
         <b-field label="Password">
             <b-input v-model="user.Password" type="password" maxlength="30"></b-input>
         </b-field>
-           <b-button @click="create()">Click Me</b-button>
+           <b-button @click="create()" >Click Me</b-button>
     </section>
 </template>
 
@@ -28,6 +28,7 @@ import {UserService} from '../services/register.service'
 
         methods:{
             async create(){
+                    
                 console.log(this.user.Password)
                // const data = await this.service.siqnip(this.user)
                // console.log(data)

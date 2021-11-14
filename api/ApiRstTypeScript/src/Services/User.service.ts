@@ -13,7 +13,7 @@ export let getUser= async(req:Request, res:Response)=>{
     const {id} = req.params;
     const  users= await User.findById(id);
     console.log(req.params.id)
-    return res.json(User);    
+    return res.json(users);    
 }
 export let createUser= async(req:Request, res:Response)=>{
     const{Name, LastName}= req.body;
